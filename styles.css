@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-around; /* Mantém a mesma proporção entre os containers */
+    gap: 20px; /* Espaçamento entre os containers */
+    flex-wrap: wrap; /* Para se ajustar melhor em telas menores */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px; /* Limita a largura máxima para manter a consistência */
+    text-align: center;
+    width: 100%; /* Mantém a largura 100% proporcional à tela */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+select {
+    background-color: #fff;
+    cursor: pointer;
+    appearance: none;
+    padding-right: 30px;
+    /*background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDA3YmZmIiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgMTEgOCIgd2lkdGg9IjExIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik00LjExIDAgbC01LjE0IDQuODcgNS4xNiA0Ljg3IDUuMTYtNC44Ny01LjE4LTQuODciLz48L3N2Zz4=');*/
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f7f;
+}
+
+select::-ms-expand {
+    display: none;
+}
